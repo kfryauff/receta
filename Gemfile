@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.1.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -27,6 +28,7 @@ gem 'sass', '3.2.19'
 
 gem 'bower-rails'
 
+# For Heroku
 gem 'foreman'
 group :production, :staging do
   gem 'rails_12factor'
@@ -34,6 +36,7 @@ group :production, :staging do
   gem 'rails_serve_static_assets'
 end
 
+#
 group :test, :development do
   gem 'rspec'
   gem 'rspec-rails', '~> 2.0'
